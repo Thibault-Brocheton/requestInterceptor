@@ -15,7 +15,7 @@ var app = express();
 var port = process.env.PORT || 80;
 
 //Body parser middleware
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 var lastReq = [];
 
