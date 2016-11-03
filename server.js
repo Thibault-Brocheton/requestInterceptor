@@ -23,7 +23,7 @@ var lastReq = [];
 app.all('/register',function(req, res) {
 	lastReq.push(req.body);
 	console.log("saved "+lastReq.length);
-	res.status(200).send("saved");
+	res.status(200).send("[accepted]");
 });
 
 app.all('/show',function(req, res) {
