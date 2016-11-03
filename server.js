@@ -21,8 +21,8 @@ var lastReq = [];
 
 //Main route and Slack Register route
 app.all('/register',function(req, res) {
-	lastReq.push(req);
-	console.log(req);
+	lastReq.push(req.body);
+	console.log("saved "+lastReq.length);
 	res.status(200).send("saved");
 });
 
@@ -32,6 +32,7 @@ app.all('/show',function(req, res) {
 
 app.all('/flush',function(req, res) {
 	lastReq = [];
+	console.log("flush");
 	res.status(200).send("flushed");
 });
 
