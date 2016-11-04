@@ -23,6 +23,7 @@ var lastReq = [];
 app.all('/register',function(req, res) {
 	lastReq.push(req.body);
 	console.log("saved "+lastReq.length);
+	console.log(req);
 	res.status(200).send("[accepted]");
 });
 
