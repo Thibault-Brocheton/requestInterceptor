@@ -1,30 +1,27 @@
 {
-  "name": "ecocea-slack",
+  "name": "request-interceptor",
   "version": "0.1.0",
-  "description": "Ecocea Slack Integration",
-  "main": "app.js",
+  "description": "Request Inteceptor",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zangdar1111/ecocea-slack.git"
+    "url": "git+https://github.com/Zangdar1111/requestInterceptor.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zangdar1111/ecocea-slack/issues"
+    "url": "https://github.com/Zangdar1111/requestInterceptor/issues"
   },
-  "homepage": "https://github.com/Zangdar1111/ecocea-slack#readme",
+  "homepage": "https://github.com/Zangdar1111/requestInterceptor#readme",
   "engines": {
 	"node":"4.4.7",
 	"npm":"2.15.8"
   },
   "dependencies": {
     "body-parser": "^1.x.x",
-    "express": "^4.x.x",
-    "mongodb":"^2.x.x",
-    "diacritics":"^1.x.x",
-	"mysql":"^2.x.x"
+    "express": "^4.x.x"
   }
 }
