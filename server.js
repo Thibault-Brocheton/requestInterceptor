@@ -6,7 +6,6 @@
 //get npm or node dependancies
 var express = require('express');
 var bodyParser = require('body-parser');
-var removeDiacritics = require('diacritics').remove;
 
 //init server properties and connections, then init http server
 console.log("Starting initialization of Request Interceptor");
@@ -46,13 +45,3 @@ app.use(function (err, req, res, next) {
 app.listen(port, function () {
   console.log('Request Interceptor is now listening on port '+port+'.');
 });
-
-
-
-function forbidden(res){
-	res.status('403').send('forbidden').end();
-}
-
-function malformed(res) {
-	res.status('400').send('query malformed');
-}
